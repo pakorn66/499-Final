@@ -1,0 +1,92 @@
+/* ปรับปรุงการจัดเรียงให้ดีขึ้น */
+.container {
+  width: 80%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* หลีกเลี่ยงการใช้พื้นหลังใน Current Balance */
+.balance-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.balance-label {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.balance-amount {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.clear-button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 200px;
+  margin: 20px auto;
+  transition: background-color 0.3s;
+}
+
+.clear-button:hover {
+  background-color: #c0392b;
+}
+
+/* เพิ่มการจัดระเบียบให้กับรายการธุรกรรม */
+.transaction-list {
+  margin-top: 20px;
+}
+
+.transaction-item {
+  background-color: #ecf0f1;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.transaction-item.deposit {
+  background-color: #2ecc71; /* สีเขียว */
+  color: white;
+}
+
+.transaction-item.withdraw {
+  background-color: #e74c3c; /* สีแดง */
+  color: white;
+}
+
+.transaction-item .transaction-type {
+  font-weight: bold;
+}
+
+.transaction-item .transaction-date {
+  font-style: italic;
+}
+
+.transaction-item .transaction-amount {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
